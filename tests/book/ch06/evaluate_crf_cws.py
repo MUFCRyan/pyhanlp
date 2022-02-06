@@ -5,6 +5,10 @@
 # 配套书籍：http://nlp.hankcs.com/book.php
 # 讨论答疑：https://bbs.hankcs.com/
 
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))))))
 from pyhanlp import *
 from tests.book.ch03 import msr
 from tests.book.ch03.eval_bigram_cws import CWSEvaluator
